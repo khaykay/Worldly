@@ -14,6 +14,10 @@ It allows users to:
 - Sort by name, population, or area.
 - View detailed country information.
 
+## 💻 Demo
+
+https://worldyapp.netlify.app/
+
 ## Features
 
 - **Search Bar:** Search for countries by name with debounce functionality for optimized user experience.
