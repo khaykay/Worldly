@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# Countries Explorer Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **Countries Explorer Application** built with:
 
-Currently, two official plugins are available:
+- React
+- TypeScript
+- GraphQL
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+It allows users to:
 
-## Expanding the ESLint configuration
+- View a list of countries.
+- Search for countries by name.
+- Filter by region or language.
+- Sort by name, population, or area.
+- View detailed country information.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Search Bar:** Search for countries by name with debounce functionality for optimized user experience.
+- **Dynamic Filters:** Filter by region or languages available in the data.
+- **Sorting Options:** Sort countries by name, population, or area.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Installation
+
+To run the application locally, follow these steps:
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/countries-explorer.git
+cd countries-explorer
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+  npm install
 ```
+
+Create an .env file in the root directory and add your API key:
+
+```plaintext
+
+  REACT_APP_API_KEY=your_api_key_here
+```
+
+Start the development server:
+
+```
+bash
+npm start
+```
+
+GraphQL Queries
+The application uses the following GraphQL queries:
+
+GET_COUNTRIES: Fetches countries with details like name, region, population, area, languages, and flags.
+Folder Structure
+
+```graphql
+
+src/
+├── components/         # React components
+├── GraphQL/            # GraphQL queries
+├── types/              # TypeScript types and interfaces
+├── styles/             # CSS or TailwindCSS classes
+├── App.tsx             # Main application component
+└── index.tsx           # Entry point
+```
+
+Contributing
+Contributions are welcome! To contribute:
+
+```
+Fork the repository.
+Create a new branch for your feature/fix.
+Submit a pull request with a detailed description of your changes.
+```
+
+Acknowledgments
+Data sourced from a GraphQL countries API.
+Developed with ❤️ by Khaykay.
