@@ -18,6 +18,7 @@
 
 .container {
   min-height: 100vh;
+  min-width: 100vw;
   background: #aae4e6;
 }
 
