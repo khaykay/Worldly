@@ -53,7 +53,7 @@ const CountryDetails = () => {
     >
       {" "}
       <BackButton />
-      <div className="opaque relative flex flex-col justify-between">
+      <div className="bg-black/60  relative flex flex-col justify-between">
         <section className="relative pt-2 flex justify-end  ">
           {weather && (
             <div className=" pr-3 md:pr-5">
@@ -62,7 +62,7 @@ const CountryDetails = () => {
                 alt="weather icon"
                 className="absolute -right-4 -top-10 "
               />
-              <h2 className="text-4xl text-black">
+              <h2 className="text-4xl text-yellow-400">
                 {" "}
                 {weather?.current.temp_c}°C
               </h2>
@@ -87,11 +87,11 @@ const CountryDetails = () => {
             >
               {country?.name}
             </h1>
-            <p className="text-[10px] text-black md:text-xs">
+            <p className="text-[10px] text-yellow-400 md:text-xs">
               Capital: {country?.capital}
             </p>
           </div>
-          <span className=" flex overflow-scroll text-black">
+          <span className=" flex overflow-auto text-yellow-400">
             <p className=" flex  items-center justify-center">
               <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">Population:</span>

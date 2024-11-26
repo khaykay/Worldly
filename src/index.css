@@ -5,15 +5,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  /* color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .container {
@@ -53,8 +48,6 @@
 .loadingspinner div {
   display: inline-block;
   background: rgb(40, 40, 40);
-  /*background: var(--text-color);*/
-  /*box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);*/
   border: none;
   border-radius: 2px;
   width: var(--square);
@@ -286,9 +279,6 @@
     rgba(255, 255, 255, 0.5) 100%
   );
   backdrop-filter: blur(5px);
-
-  /* box-shadow: 0 0.5px 0 1px rgba(255, 255, 255, 0.23) inset,
-    0 1px 0 0 rgba(255, 255, 255, 0.66) inset, 0 4px 16px rgba(0, 0, 0, 0.12); */
 }
 .opaque {
   background: linear-gradient(

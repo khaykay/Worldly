@@ -8,7 +8,7 @@ function BackButton() {
   const style = " bg-black/10  rounded-full hover:bg-black/60  h-12 w-12 ";
   return (
     <button onClick={handleBack} className={style}>
-      <span className="material-symbols-outlined text-yellow-900 hover:text-yellow-400 h-full w-full flex justify-center items-center ">
+      <span className="material-symbols-outlined text-yellow-700 hover:text-yellow-400 h-full w-full flex justify-center items-center ">
         arrow_back_ios
       </span>
     </button>

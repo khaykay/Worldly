@@ -98,7 +98,7 @@ const CountryList = () => {
 
           {/* Filters Dropdown */}
           {showFilters && (
-            <div className="mt-3 flex justify-center flex-wrap gap-3 opaque p-4 shadow-lg rounded-lg border border-gray-300 z-10 absolute w-[100%] left-0">
+            <div className="mt-3 flex justify-center flex-wrap gap-3 bg-black/60  p-4 shadow-lg rounded-lg  z-10 absolute w-[100%] left-0">
               {/* Region Filter */}
               <select
                 className="p-2 border rounded-md"
@@ -150,7 +150,7 @@ const CountryList = () => {
           )}
 
           {/* Display Filtered and Sorted Countries */}
-          <div className="flex flex-col flex-wrap overflow-scroll countries w-[100%] gap-5">
+          <div className="flex flex-col flex-wrap overflow-auto countries w-[100%] gap-5">
             {filteredCountries.map((country) => (
               <Link
                 key={country.alpha3Code}
