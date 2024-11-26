@@ -93,39 +93,39 @@ const CountryDetails = () => {
           </div>
           <span className=" flex overflow-auto text-yellow-400">
             <p className=" flex  items-center justify-center">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">Population:</span>
                 <span>{country?.population}</span>
               </span>
             </p>
             <p className=" flex  items-center justify-center ">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">Region:</span>
                 <span>{country?.region}</span>
               </span>
             </p>
             <p className="flex  items-center justify-center">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">Area: </span>
                 <span>{country?.area} km²</span>
               </span>
             </p>
             <p className=" flex items-center justify-center ">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">TimeZone :</span>
                 <span> {country.timezones[0]}</span>
               </span>
             </p>
 
             <p className=" flex  items-center justify-center ">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center  min-w-44">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center  min-w-44">
                 <span className="text-[10px] md:text-xs">Language:</span>
                 <span>{country.languages.edges[0].node.name}</span>
               </span>
             </p>
 
             <p className=" flex items-center justify-center">
-              <span className="border-r border-r-stone-500 border-solid flex flex-col items-center justify-center min-w-44 ">
+              <span className="border-r border-r-stone-400 border-solid flex flex-col items-center justify-center min-w-44 ">
                 <span className="text-[10px] md:text-xs">Currency:</span>
                 <span className=" ">
                   <span>{country.currencies.edges[0].node.symbol}</span>

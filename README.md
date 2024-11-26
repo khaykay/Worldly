@@ -56,13 +56,14 @@ bash
 npm start
 ```
 
-GraphQL Queries
+## GraphQL Queries
+
 The application uses the following GraphQL queries:
 
 GET_COUNTRIES: Fetches countries with details like name, region, population, area, languages, and flags.
 Folder Structure
 
-```graphql
+```folder structure
 
 src/
 ├── components/         # React components
@@ -73,15 +74,19 @@ src/
 └── index.tsx           # Entry point
 ```
 
-Contributing
-Contributions are welcome! To contribute:
+## Architecture and Design
 
-```
-Fork the repository.
-Create a new branch for your feature/fix.
-Submit a pull request with a detailed description of your changes.
-```
+The application is designed with a modular component-based architecture using React.js and TypeScript, ensuring scalability, maintainability, and clear code structure. For data persistence, we utilized localStorage, which not only retains user data across sessions but also eliminates unnecessary API calls by serving data directly from the browser storage. This approach enhances performance and reduces latency, making the application faster and more efficient.
 
-Acknowledgments
+Styling was implemented with TailwindCSS, allowing for a responsive and visually appealing user interface with minimal overhead. These choices create a lightweight, user-friendly application, balancing simplicity with functionality for an optimized user experience. For stakeholders, this architecture ensures a robust, low-maintenance product that prioritizes speed and reliability without over-reliance on server-side infrastructure.
+
+## Challenges Faced
+
+One challenge was balancing performance with simplicity. By choosing to persist data locally, I reduced the need for frequent API calls, which improved the app’s speed. However, it also meant meticulously handling edge cases like data synchronization and ensuring updates were reflected instantly on the UI without adding unnecessary complexity.
+
+If I had more time, I would’ve implemented an intelligent syncing mechanism, combining localStorage with a lightweight IndexedDB or server-side fallback for scalability and integrate unit testing for key functionalities to ensure long-term reliability. While the current solution delivers on speed and efficiency, these additional layers would’ve elevated the app to handle even more complex scenarios gracefully
+
+## Acknowledgments
+
 Data sourced from a GraphQL countries API.
 Developed with ❤️ by Khaykay.
